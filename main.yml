@@ -22,6 +22,8 @@
       tags: ['mas']
     - role: gantsign.visual-studio-code-extensions
       tags: ['vscode']
+    - role: ctorgalson.oh-my-zsh
+      tags: ['shell']
 
   tasks:
     - include: tasks/ansible-setup.yml
