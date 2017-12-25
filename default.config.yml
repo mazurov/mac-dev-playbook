@@ -94,5 +94,18 @@ pip_packages: []
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
 
+users:
+  - username: a.mazurov
+    visual_studio_code_extensions:
+      - eamodio.gitlens
+      - ms-python.python
+      - caarlos0.language-prometheus
+      - PeterJausovec.vscode-docker
+      - itryapitsin.scala
+      - foxundermoon.shell-format
+    # visual_studio_code_extensions_absent:
+    #   - seanmcbreen.Spell
+
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
+
