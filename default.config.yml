@@ -6,24 +6,18 @@ configure_sudoers: yes
 configure_terminal: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/mazurov/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/dotfiles
 dotfiles_files:
-  - .bash_profile
-  - .gitignore
-  - .inputrc
+  - .zshrc
   - .osx
-  - .vimrc
+  - .gitconfig
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
   - bash-completion
-  - chromedriver
-  - doxygen
-  - gettext
-  - gifsicle
   - git
   - go
   - gpg
@@ -47,26 +41,31 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
-  - homebrew/php
+#  - homebrew/php
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  # - visual-studio-code
+  - iterm2
+  - 1password
   - docker
   - dropbox
+  - google-backup-and-sync
   # - fing # Download link keeps getting changed, d'oh!
-  - firefox
-  - google-chrome
+  # - firefox
+  # - google-chrome
   - handbrake
-  - licecap
-  - limechat
   - macvim
-  - sequel-pro
   - skitch
-  - slack
-  - sublime-text
+  # - slack
   - transmit
   - vagrant
   - virtualbox
+  - dash
+  - alfred
+  - anki
+  - calibre
+  - vlc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
