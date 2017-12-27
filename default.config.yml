@@ -39,6 +39,7 @@ homebrew_installed_packages:
   - wrk
   - maven
   - sbt
+  - jq
 
 
 homebrew_taps:
@@ -73,6 +74,11 @@ homebrew_cask_apps:
   - chefdk
   - telegram
   - appcleaner
+  - ipsecuritas
+  - evernote
+  - meld
+  - sourcetree
+  - sublime-text
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -118,7 +124,11 @@ zsh_users:
   -
     user: a.mazurov
     group: admin
-    settings: []
+    settings: [
+      'alias vk="KITCHEN_YAML=.kitchen.vagrant.yml bundle exec kitchen"',
+      'alias ak="KITCHEN_YAML=.kitchen.ec2.yml bundle exec kitchen"',
+      'eval "$(chef shell-init zsh)"'
+    ]
   
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
