@@ -79,6 +79,7 @@ homebrew_cask_apps:
   - meld
   - sourcetree
   - sublime-text
+  - whatsapp
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
